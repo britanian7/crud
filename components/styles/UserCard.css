@@ -1,0 +1,75 @@
+.user-item {
+  background: rgb(30, 41, 59);
+  border: 1px solid rgb(71, 85, 105);
+  border-radius: 8px;
+  padding: 20px;
+  color: #fff;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 4px 8px rgba(78, 78, 78, 0.5);
+  font-family: "nunito", sans-serif;
+  /*cursor: grab;*/
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  img.user-image {
+    width: 100%;
+    max-width: 25em;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    max-height: 200px;
+  }
+
+  h2,
+  p {
+    margin: 3px;
+  }
+
+  button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 7px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    &:hover {
+      background-color: #666;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.delete {
+  background-color: #c00;
+
+  &:hover {
+    background-color: #a00;
+  }
+}
+
+.buttonEdit,
+.delete {
+  width: 50px;
+  font-size: 25px;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+/*
+.user-item:active {
+  cursor: grabbing;
+}
+*/
